@@ -1,0 +1,207 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="820" viewBox="0 0 1280 820">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0e1118"/>
+      <stop offset="100%" stop-color="#17101f"/>
+    </linearGradient>
+
+    <linearGradient id="msgGrad" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0%" stop-color="#ff2bd6"/>
+      <stop offset="100%" stop-color="#ff71e8"/>
+    </linearGradient>
+
+    <linearGradient id="wordGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#00e5ff"/>
+      <stop offset="100%" stop-color="#39ff14"/>
+    </linearGradient>
+
+    <filter id="glow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="5" result="b"/>
+      <feMerge>
+        <feMergeNode in="b"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <style>
+      text {
+        font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      }
+      .title { font-size: 42px; font-weight: 850; fill: #fff; }
+      .sub { font-size: 17px; fill: #a1a7b4; }
+      .month { font-size: 16px; font-weight: 750; fill: #e7e9ee; }
+      .small { font-size: 13px; font-weight: 800; letter-spacing: 1.4px; fill: #868da0; }
+      .msgnum { font-size: 15px; font-weight: 800; fill: #ffd7f8; }
+      .wordnum { font-size: 15px; font-weight: 800; fill: #d6ffff; }
+      .peak { fill: #39ff14; filter: url(#glow); }
+      .grid { stroke: #303544; stroke-width: 1; opacity: .65; }
+      .row { opacity: 0; animation: fade .55s ease forwards; }
+      .bar {
+        transform-box: fill-box;
+        transform-origin: bottom center;
+        transform: scaleY(0);
+        animation: rise 1.15s cubic-bezier(.2,.85,.25,1) forwards;
+      }
+      .wordline {
+        stroke-dasharray: 1200;
+        stroke-dashoffset: 1200;
+        animation: draw 2.2s ease forwards;
+      }
+      .dot {
+        opacity: 0;
+        animation: dotIn .3s ease forwards;
+      }
+      .callout {
+        opacity: 0;
+        transform: translateY(8px);
+        animation: call .5s ease forwards;
+      }
+      @keyframes fade { to { opacity: 1; } }
+      @keyframes rise { to { transform: scaleY(1); } }
+      @keyframes draw { to { stroke-dashoffset: 0; } }
+      @keyframes dotIn { to { opacity: 1; } }
+      @keyframes call { to { opacity: 1; transform: translateY(0); } }
+      @keyframes pulse {
+        0%,100% { opacity: .82; }
+        50% { opacity: 1; }
+      }
+    </style>
+  </defs>
+
+  <rect width="1280" height="820" rx="28" fill="url(#bg)"/>
+  <circle cx="1135" cy="105" r="150" fill="#ff2bd6" opacity=".05"/>
+  <circle cx="130" cy="770" r="190" fill="#00e5ff" opacity=".035"/>
+
+  <text x="72" y="78" class="title">Monthly ChatGPT activity — 2026</text>
+  <text x="74" y="112" class="sub">Messages and words by month through August 21</text>
+
+  <!-- legend -->
+  <g transform="translate(825,78)">
+    <rect x="0" y="-11" width="15" height="15" rx="3" fill="url(#msgGrad)"/>
+    <text x="25" y="1" class="sub">Messages</text>
+    <line x1="140" y1="-3" x2="174" y2="-3" stroke="url(#wordGrad)" stroke-width="5" stroke-linecap="round"/>
+    <text x="186" y="1" class="sub">Words</text>
+  </g>
+
+  <!-- chart area -->
+  <g transform="translate(88,170)">
+    <text x="0" y="0" class="small">MESSAGES</text>
+    <text x="1088" y="0" class="small" text-anchor="end">WORDS</text>
+
+    <!-- horizontal grid -->
+    <line x1="0" y1="70"  x2="1088" y2="70"  class="grid"/>
+    <line x1="0" y1="150" x2="1088" y2="150" class="grid"/>
+    <line x1="0" y1="230" x2="1088" y2="230" class="grid"/>
+    <line x1="0" y1="310" x2="1088" y2="310" class="grid"/>
+    <line x1="0" y1="390" x2="1088" y2="390" class="grid"/>
+
+    <!-- labels -->
+    <text x="-18" y="394" class="small" text-anchor="end">0</text>
+    <text x="-18" y="314" class="small" text-anchor="end">2K</text>
+    <text x="-18" y="234" class="small" text-anchor="end">4K</text>
+    <text x="-18" y="154" class="small" text-anchor="end">6K</text>
+    <text x="-18" y="74" class="small" text-anchor="end">8K</text>
+
+    <text x="1106" y="394" class="small">0</text>
+    <text x="1106" y="314" class="small">350K</text>
+    <text x="1106" y="234" class="small">700K</text>
+    <text x="1106" y="154" class="small">1.05M</text>
+    <text x="1106" y="74" class="small">1.4M</text>
+
+    <!-- message bars -->
+    <g>
+      <!-- Jan -->
+      <rect x="42"  y="337.7" width="62" height="52.3" rx="8" fill="url(#msgGrad)" class="bar" style="animation-delay:.10s"/>
+      <text x="73" y="326" class="msgnum row" text-anchor="middle" style="animation-delay:.55s">1,307</text>
+
+      <!-- Feb -->
+      <rect x="172" y="270.3" width="62" height="119.7" rx="8" fill="url(#msgGrad)" class="bar" style="animation-delay:.22s"/>
+      <text x="203" y="258.5" class="msgnum row" text-anchor="middle" style="animation-delay:.67s">2,992</text>
+
+      <!-- Mar -->
+      <rect x="302" y="328.6" width="62" height="61.4" rx="8" fill="url(#msgGrad)" class="bar" style="animation-delay:.34s"/>
+      <text x="333" y="317" class="msgnum row" text-anchor="middle" style="animation-delay:.79s">1,536</text>
+
+      <!-- Apr -->
+      <rect x="432" y="225.8" width="62" height="164.2" rx="8" fill="url(#msgGrad)" class="bar" style="animation-delay:.46s"/>
+      <text x="463" y="214" class="msgnum row" text-anchor="middle" style="animation-delay:.91s">4,105</text>
+
+      <!-- May -->
+      <rect x="562" y="133.5" width="62" height="256.5" rx="8" fill="url(#msgGrad)" class="bar" style="animation-delay:.58s"/>
+      <text x="593" y="122" class="msgnum row" text-anchor="middle" style="animation-delay:1.03s">6,412</text>
+
+      <!-- Jun -->
+      <rect x="692" y="69.8" width="62" height="320.2" rx="8" fill="url(#msgGrad)" class="bar" style="animation-delay:.70s"/>
+      <text x="723" y="58" class="msgnum row" text-anchor="middle" style="animation-delay:1.15s">8,004</text>
+
+      <!-- Jul -->
+      <rect x="822" y="219.5" width="62" height="170.5" rx="8" fill="url(#msgGrad)" class="bar" style="animation-delay:.82s"/>
+      <text x="853" y="208" class="msgnum row" text-anchor="middle" style="animation-delay:1.27s">4,262</text>
+
+      <!-- Aug -->
+      <rect x="952" y="62.1" width="62" height="327.9" rx="8" fill="url(#msgGrad)" class="bar" style="animation-delay:.94s; filter:url(#glow)"/>
+      <text x="983" y="48" class="msgnum peak row" text-anchor="middle" style="animation-delay:1.39s">8,197</text>
+    </g>
+
+    <!-- words line -->
+    <polyline
+      points="73,289.5 203,228.5 333,277.0 463,126.9 593,80.4 723,4.6 853,230.1 983,198.4"
+      fill="none"
+      stroke="url(#wordGrad)"
+      stroke-width="6"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      class="wordline"
+      style="animation-delay:.8s"
+    />
+
+    <!-- dots -->
+    <g fill="#00e5ff">
+      <circle cx="73"  cy="289.5" r="6" class="dot" style="animation-delay:1.15s"/>
+      <circle cx="203" cy="228.5" r="6" class="dot" style="animation-delay:1.30s"/>
+      <circle cx="333" cy="277.0" r="6" class="dot" style="animation-delay:1.45s"/>
+      <circle cx="463" cy="126.9" r="6" class="dot" style="animation-delay:1.60s"/>
+      <circle cx="593" cy="80.4"  r="6" class="dot" style="animation-delay:1.75s"/>
+      <circle cx="723" cy="4.6"   r="7" class="dot" style="animation-delay:1.90s; filter:url(#glow)"/>
+      <circle cx="853" cy="230.1" r="6" class="dot" style="animation-delay:2.05s"/>
+      <circle cx="983" cy="198.4" r="6" class="dot" style="animation-delay:2.20s"/>
+    </g>
+
+    <!-- word labels -->
+    <g class="wordnum">
+      <text x="73" y="311" text-anchor="middle" class="row" style="animation-delay:1.35s">351,830</text>
+      <text x="203" y="250" text-anchor="middle" class="row" style="animation-delay:1.50s">565,350</text>
+      <text x="333" y="299" text-anchor="middle" class="row" style="animation-delay:1.65s">396,101</text>
+      <text x="463" y="149" text-anchor="middle" class="row" style="animation-delay:1.80s">920,558</text>
+      <text x="593" y="103" text-anchor="middle" class="row" style="animation-delay:1.95s">1,083,755</text>
+      <text x="723" y="-20" text-anchor="middle" class="peak row" style="animation-delay:2.10s">1,349,030</text>
+      <text x="853" y="252" text-anchor="middle" class="row" style="animation-delay:2.25s">559,485</text>
+      <text x="983" y="220" text-anchor="middle" class="row" style="animation-delay:2.40s">670,506</text>
+    </g>
+
+    <!-- months -->
+    <g transform="translate(0,440)">
+      <text x="73" y="0" class="month" text-anchor="middle">January</text>
+      <text x="203" y="0" class="month" text-anchor="middle">February</text>
+      <text x="333" y="0" class="month" text-anchor="middle">March</text>
+      <text x="463" y="0" class="month" text-anchor="middle">April</text>
+      <text x="593" y="0" class="month" text-anchor="middle">May</text>
+      <text x="723" y="0" class="month" text-anchor="middle">June</text>
+      <text x="853" y="0" class="month" text-anchor="middle">July</text>
+      <text x="983" y="0" class="month" text-anchor="middle">Aug 1–21</text>
+    </g>
+  </g>
+
+  <!-- callouts -->
+  <g transform="translate(110,690)" class="callout" style="animation-delay:2.55s">
+    <rect x="0" y="0" width="460" height="72" rx="16" fill="#171d27" stroke="#303746"/>
+    <text x="22" y="29" class="small">WORD PEAK</text>
+    <text x="22" y="53" font-size="22" font-weight="850" fill="#39ff14">June · 1,349,030 words</text>
+  </g>
+
+  <g transform="translate(710,690)" class="callout" style="animation-delay:2.75s">
+    <rect x="0" y="0" width="460" height="72" rx="16" fill="#171d27" stroke="#303746"/>
+    <text x="22" y="29" class="small">MESSAGE PEAK</text>
+    <text x="22" y="53" font-size="22" font-weight="850" fill="#ff71e8">August 1–21 · 8,197 messages</text>
+  </g>
+</svg>
