@@ -66,10 +66,15 @@ Now I'm pretty upset about the whole fucking thing.
 └────────────────┘
 
 ☐ Matress & bed frame
+
 ☐ Dresser
+
 ☐ Cabinet with drawers
+
 ☐ Coffee table
+
 ☐ TV table
+
 ☐ Lamps
 
 ┌─────────────────┐
@@ -77,9 +82,13 @@ Now I'm pretty upset about the whole fucking thing.
 └─────────────────┘
 
 ☒ Couch
+
 ☒ Love seat
+
 ☒ Computer desk
+
 ☒ Rolling kitchen cart
+
 ☒ End table
 
 ┌──────────────┐
@@ -87,9 +96,13 @@ Now I'm pretty upset about the whole fucking thing.
 └──────────────┘
 
 ☐ Between 1,000 and 1,500 square feet
+
 ☐ Fenced yard
+
 ☐ $350,000 or less
+
 ☐ Move in ready
+
 ☐ Reasonably updated
 
 ─── ⋆ ⋅ ☆ ⋅ ⋆ ───
@@ -99,7 +112,9 @@ Now I'm pretty upset about the whole fucking thing.
 🎬𝐖𝐎𝐍𝐃𝐄𝐑 𝐖𝐎𝐌𝐀𝐍 (2017)
 
 📖STORY ◆◆◆◆◆
+
 🎭PERFORMANCES ◆◆◆◆◆
+
 👍ENJOYMENT ◆◆◆◆◆
 
 ·　·　✦　·　·
