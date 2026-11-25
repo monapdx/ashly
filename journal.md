@@ -34,10 +34,11 @@ nested = code block containing code (nested)
 mdtable = markdown table generator
 
 -->
-
+<pre>
 ┌─────────┐
 │ JOURNAL │
 └─────────┘
+</pre>
 
 ╭◉ 25.11.26
 
