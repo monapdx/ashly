@@ -47,6 +47,7 @@ Needed some time to myself yesterday, so I asked David to leave for a while so I
 ╰┈
 
 ╭◉ 25.11.14
+
 Ugh...started watching a movie that I was enjoying, but then I became concerned the dog was going to die, so I left the room. Seeing dogs get hurt or killed in movies is my only hard limit when it comes to what I'm willing to watch.
 
 The people around me know this. Some of them seem to think it's stupid, and I don't care what they think about it. I find it distressing and it can emotionally affect me the rest of the day.
@@ -60,13 +61,15 @@ I'm upset about it. I expect my shitty housemate to lie to me about something wh
 I didn't need to be protected from the truth. I asked for it directly.
 
 Now I'm pretty upset about the whole fucking thing.
+
 ╰┈
 
 ┈┈┈ ◇ ┈┈┈
-
+<pre>
 ┌────────────────┐
 │ THINGS TO TAKE │
 └────────────────┘
+</pre>
 
 ☐ Matress & bed frame
 
@@ -80,9 +83,11 @@ Now I'm pretty upset about the whole fucking thing.
 
 ☐ Lamps
 
+<pre>
 ┌─────────────────┐
 │ THINGS TO TRASH │
 └─────────────────┘
+</pre>
 
 ☒ Couch
 
@@ -94,9 +99,11 @@ Now I'm pretty upset about the whole fucking thing.
 
 ☒ End table
 
+<pre>
 ┌──────────────┐
 │ REQUIREMENTS │
 └──────────────┘
+</pre>
 
 ☐ Between 1,000 and 1,500 square feet
 
@@ -140,9 +147,11 @@ IF NO, STUPID!
 
 ─── ⋆ ⋅ ☆ ⋅ ⋆ ───
 
+<pre>
 ┌────────────────┐
 │ WEIRD WEBSITES │
 └────────────────┘
+</pre>
 
 - **[Does The Dog Die?](https://doesthedogdie.com)**
 - **[Rooms.xyz](https://rooms.xyz/)**
