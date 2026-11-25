@@ -40,7 +40,9 @@ mdtable = markdown table generator
 └─────────┘
 
 ╭◉ 25.11.26
+
 Needed some time to myself yesterday, so I asked David to leave for a while so I could be alone in my own space for a while. Of course this turned into an instant screaming match, because he expects me to solve every problem in his life for him for some fucking reason, despite being a grown man in his sixties. Thankfully Marcus had just called to get back to us from the day before, when we were trying to hunt him down to hook us up with some dope. Perfect timing, I suggested calling him back and asking if he'd come pick him upto hang with him for a while, which he did. Thank fucking God.
+
 ╰┈
 
 ╭◉ 25.11.14
